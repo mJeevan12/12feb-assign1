@@ -1,0 +1,29 @@
+
+ch=1500
+hp=1750
+tb=3509
+de=359
+le=2730
+
+cna=input('enter name of customer')
+cno=input('enter customer no')
+chq=int(input('enter the no of chairs:'))
+hpq=int(input('enter the no of headphones:'))
+tbq=int(input('enter the no of tables:'))
+deq=int(input('enter the no of deo:'))
+leq=int(input('enter the no of led:'))
+bill=(ch*chq)+(hp*hpq)+(tb*tbq)+(de*deq)+(le*leq)
+if bill>=5000:
+     dis=bill*10/100
+     tax=bill*10/100
+elif bill>=3000:
+     dis=bill*8/100
+     tax=bill*18/100
+elif bill>=2000:
+     dis=bill*5/100
+     tax=bill*18/100
+elif bill>=1000:
+     dis=bill*3/100
+     tax=bill*18/100
+bill=dis+tax
+print(bill)
